@@ -1,0 +1,4 @@
+version: 1
+commandUpdated:
+  generators:
+  - command: (/sbin/apk add yarn python3 npm && pip3 install pipenv && pipenv run pip install constructs cdk8s && yarn global add cdk8s-cli && cdk8s import && cdk8s synth) > /dev/null && cat dist/*
